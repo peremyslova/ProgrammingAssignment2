@@ -55,4 +55,26 @@ cacheSolve <- function(m, ...) {
 }
 
 
-
+#### Run this to test the performance increase
+#test <-function(m){
+#m should be an invertible matrix
+#calculating the inverse matrix twice, measure the time it took for each run    
+#    cache <- makeCacheMatrix(m)
+ #first run   
+   #start.time = Sys.time()
+   #cacheSolve(cache)
+   #duration = Sys.time() - start.time
+   #print(duration)
+ 
+ #second run   
+    #start.time = Sys.time()
+    #cacheSolve(cache)
+    #duration = Sys.time() - start.time
+    #print(duration)
+    
+  
+  #}
+  
+#### Test data
+#m<-matrix(c(1,2,3,1,1,1,1,0,1),3,3)
+#test(m)
